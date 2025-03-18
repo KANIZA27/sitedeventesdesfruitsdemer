@@ -1,5 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
+import ProductCard from './ProductCard';
+import Shop from './Shopping';
 
 function App() {
   return (
