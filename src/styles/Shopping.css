@@ -1,0 +1,78 @@
+/* src/styles/Shopping.css */
+
+/* Style de base pour le conteneur de la page Shop */
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style de la liste des produits */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style pour chaque carte de produit */
+  .product-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Effet au survol pour les cartes */
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style de l'image du produit */
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Style pour le nom du produit */
+  .product-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Style pour le prix */
+  .product-card p {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Media query pour rendre la page responsive */
+  @media (max-width: 768px) {
+    .product-card {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      width: 150px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  }
+  

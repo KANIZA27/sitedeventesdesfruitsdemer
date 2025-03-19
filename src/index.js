@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './components/App';
+import './styles/index.css';   // Importation de ton fichier CSS
+import App from './components/App';  // Ton composant App principal
+import { BrowserRouter } from 'react-router-dom';  // Import de BrowserRouter pour gérer le routage
 import reportWebVitals from './reportWebVitals';
 
+// Création du root pour ton application React
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Rendu de l'application avec BrowserRouter enveloppant le composant App
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>  {/* Enveloppe l'application dans BrowserRouter */}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Si tu veux mesurer la performance de ton app, tu peux passer une fonction à reportWebVitals
 reportWebVitals();
