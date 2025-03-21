@@ -1,0 +1,33 @@
+.navbar {
+    background-color:black;
+    padding: 10px;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .active {
+    border-bottom: 2px solid #fff;
+  }
+  

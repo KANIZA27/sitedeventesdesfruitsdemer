@@ -1,23 +1,26 @@
 // src/components/Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.css';  // Nous allons ajouter du style à cette barre de navigation
+import { NavLink } from 'react-router-dom';
+import '../styles/Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
-          <Link to="/" className="navbar-link">Accueil</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/catalogue" className="navbar-link">Catalogue produit</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/achat-paiement" className="navbar-link">Achat / Paiement</Link>
+          <NavLink to="/" className="navbar-link" activeClassName="active">Accueil</NavLink>
         </li>
         <li className='navbar-item'>
-            <Link to="/connexion-inscription" className='navbar-link'>Connexion / Incription</Link>
+          <NavLink to="/apropos" className="navbar-link" activeClassName="active">Apropos</NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink to="/catalogue" className="navbar-link" activeClassName="active">Catalogue produit</NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink to="/achat-paiement" className="navbar-link" activeClassName="active">Achat / Paiement</NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink to="/connexion-inscription" className="navbar-link" activeClassName="active">Connexion / Inscription</NavLink>
         </li>
       </ul>
     </nav>
@@ -25,3 +28,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
